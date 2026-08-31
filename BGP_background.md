@@ -1,8 +1,28 @@
 # BGP Community Semantic Inference
+The goal is to understand enough about BGP communities, our semantic schema, and our interpretation rules to review outputs produced by our semantic extraction/inference pipeline.
+
+## Table of Contents
+
+| Section | Topic |
+|---|---|
+| [1](#1-purpose-of-this-guide) | Purpose of This Guide |
+| [2](#2-background-bgp) | Background: BGP |
+| [3](#3-semantic-labels) | Semantic Labels |
+| [4](#4-from-documentation-to-semantic-labels) | From Documentation to Semantic Labels |
+| [5](#5-bgp-community-semantic-model) | BGP Community Semantic Model |
+| [6](#6-community-type-and-namespace) | Community Type and Namespace |
+| [7](#7-classification) | Classification |
+| [8](#8-route-source) | Route Source |
+| [9](#9-relationship-alone-does-not-establish-route-source) | Relationship Alone Does Not Establish Route Source |
+| [10](#10-neighbor-information) | Neighbor Information |
+| [11](#11-internet-exchange-points-ixps) | Internet Exchange Points (IXPs) |
+| [12](#12-route-servers) | Route Servers |
+| [13](#13-location) | Location |
+| [14](#14-geographic-normalization) | Geographic Normalization |
+| [15](#15-ambiguous-geographic-interpretation) | Ambiguous Geographic Interpretation |
+| [16](#16-validation-status) | Validation Status |
 
 ## 1. Purpose of This Guide
-
-The goal is to understand enough about BGP communities, our semantic schema, and our interpretation rules to review outputs produced by our semantic extraction/inference pipeline.
 
 Your initial task will mainly involve **judging whether semantic information extracted from BGP community documentation is correct**.
 
